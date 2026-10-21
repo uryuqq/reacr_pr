@@ -1,6 +1,6 @@
 import s from './Header.module.css'
 
-export function Header({ onCartClick }) {
+export function Header() {
   return (
     <header className={s.header}>
       <div className={`container ${s.inner}`}>
@@ -11,7 +11,7 @@ export function Header({ onCartClick }) {
         <nav className={s.nav} aria-label="Основная навигация">
           <a className={s.active} href="#home" aria-current="page">Главная</a>
           <a href="#catalog">Каталог</a>
-          <button type="button" onClick={onCartClick}>Корзина</button>
+          <a href="#">Корзина</a>
         </nav>
       </div>
     </header>

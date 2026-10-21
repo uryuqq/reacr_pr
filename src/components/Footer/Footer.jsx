@@ -1,6 +1,6 @@
 import s from './Footer.module.css'
 
-export function Footer({ onCartClick }) {
+export function Footer() {
   return (
     <footer className={s.footer}>
       <div className={`container ${s.inner}`}>
@@ -12,7 +12,7 @@ export function Footer({ onCartClick }) {
           <nav className={s.nav} aria-label="Навигация в подвале">
             <a href="#home">Главная</a>
             <a href="#catalog">Каталог</a>
-            <button type="button" onClick={onCartClick}>Корзина</button>
+            <a href="#">Корзина</a>
           </nav>
         </div>
         <p className={s.copyright}>© 2026 ТИХО. Все права защищены.</p>

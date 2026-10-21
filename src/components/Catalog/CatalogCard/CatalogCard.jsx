@@ -1,17 +1,17 @@
 import s from './CatalogCard.module.css'
 
-export function CatalogCard({ product, onAddToCart }) {
+export function CatalogCard({ name, category, price, image, alt }) {
   return (
     <article className={s.card}>
-      <img className={s.image} src={product.image} alt={product.alt} width="451" height="320" loading="lazy" />
+      <img className={s.image} src={image} alt={alt} width="451" height="320" loading="lazy" />
       <div className={s.info}>
-        <p className={s.category}>{product.category}</p>
+        <p className={s.category}>{category}</p>
         <div className={s.row}>
-          <h3>{product.name}</h3>
-          <p className={s.price}>{product.price.toLocaleString('ru-RU')} ₽</p>
+          <h3>{name}</h3>
+          <p className={s.price}>{price}</p>
         </div>
       </div>
-      <button className="button" type="button" aria-label={`В корзину: ${product.name}`} onClick={onAddToCart}>В корзину</button>
+      <button className="button" type="button">В корзину</button>
     </article>
   )
 }
