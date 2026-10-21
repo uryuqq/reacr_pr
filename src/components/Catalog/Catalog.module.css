@@ -1,0 +1,8 @@
+ .catalog { padding-bottom: 64px; scroll-margin-top: 24px; }
+.heading { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 32px; }
+.heading h2 { font-size: 28px; line-height: 42px; font-weight: 600; }
+.heading a { color: var(--green); white-space: nowrap; }
+.heading a:hover { text-decoration: underline; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+@media (max-width: 1000px) { .grid { gap: 20px; } }
+@media (max-width: 760px) { .grid { grid-template-columns: 1fr; gap: 32px; } .catalog { padding-bottom: 48px; } .heading { gap: 12px; } .heading h2 { font-size: 24px; } .heading a { font-size: 14px; } }
