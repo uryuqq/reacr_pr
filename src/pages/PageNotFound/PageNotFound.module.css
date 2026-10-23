@@ -1,0 +1,4 @@
+.page { padding-block: 80px; text-align: center; }
+.page h1 { font-size: 96px; line-height: 1.2; font-weight: 600; }
+.page h2 { margin-block: 16px; font-size: 28px; font-weight: 600; }
+.page p { margin-bottom: 32px; color: var(--muted); }

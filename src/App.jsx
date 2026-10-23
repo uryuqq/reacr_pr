@@ -1,17 +1,13 @@
 import { Header } from './components/Header/Header'
-import { Banner } from './components/Banner/Banner'
-import { Catalog } from './components/Catalog/Catalog'
-import { Newsletter } from './components/Newsletter/Newsletter'
 import { Footer } from './components/Footer/Footer'
+import { Routing } from './routing/Routing'
 
 export default function App() {
   return (
-    <div className="layout" id="home">
+    <div className="layout">
       <Header />
       <main id="main">
-        <Banner />
-        <Catalog />
-        <Newsletter />
+        <Routing />
       </main>
       <Footer />
     </div>

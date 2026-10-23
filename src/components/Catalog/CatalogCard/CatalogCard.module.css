@@ -5,6 +5,6 @@
 .row { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
 .row h3, .price { font-size: 20px; line-height: 30px; font-weight: 600; }
 .price { white-space: nowrap; }
-.card > button { margin-top: auto; width: 100%; }
+.card > :last-child { margin-top: auto; width: 100%; }
 @media (min-width: 761px) and (max-width: 1200px) { .image { height: auto; aspect-ratio: 451 / 320; } .row { flex-wrap: wrap; gap: 4px 12px; } .row h3, .price { font-size: 17px; } }
 @media (max-width: 760px) { .image { height: auto; aspect-ratio: 451 / 320; } .row h3, .price { font-size: 18px; } }
